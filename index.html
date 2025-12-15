@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of [Your Names]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-container">
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>[Partner 1] & [Partner 2]</h1>
+            <p class="date">October 12, 2026</p>
+            <a href="#rsvp" class="button">RSVP Now</a>
+        </div>
+    </header>
+
+    <section class="section" id="details">
+        <h2>The Details</h2>
+        <div class="event-card">
+            <h3>The Ceremony</h3>
+            <p><strong>Time:</strong> 4:00 PM</p>
+            <p><strong>Location:</strong> [Venue Name], [Address]</p>
+            <p><a href="[Map Link]" target="_blank">View Map</a></p>
+        </div>
+        <div class="event-card">
+            <h3>The Reception</h3>
+            <p><strong>Time:</strong> 6:00 PM</p>
+            <p><strong>Location:</strong> Same as Ceremony</p>
+        </div>
+    </section>
+
+    <section class="section" id="story">
+        <h2>Our Story</h2>
+        <p>A short, sweet summary of how you met and your journey...</p>
+        <div class="photo-gallery">
+            <img src="placeholder-1.jpg" alt="Couple photo 1">
+            <img src="placeholder-2.jpg" alt="Couple photo 2">
+        </div>
+    </section>
+
+    <section class="section rsvp-section" id="rsvp">
+        <h2>RSVP</h2>
+        <p>Kindly respond by September 1, 2026.</p>
+        
+        <form id="rsvp-form" action="[YOUR FREE FORM ACTION URL]" method="POST">
+            <label for="name">Full Name(s):</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="attending">Will you be attending?</label>
+            <select id="attending" name="attending" required>
+                <option value="">-- Select an option --</option>
+                <option value="yes">Joyfully Accepting</option>
+                <option value="no">Regretfully Declining</option>
+            </select>
+
+            <label for="guests">Number of Guests (including yourself):</label>
+            <input type="number" id="guests" name="guests" min="1" required value="1">
+
+            <label for="meal">Meal Choice (Optional):</label>
+            <textarea id="meal" name="meal" placeholder="Chicken, Beef, Vegetarian, or Allergies"></textarea>
+
+            <button type="submit" class="button submit-button">Submit RSVP</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Can't wait to celebrate with you!</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </div>
+</body>
+</html>
